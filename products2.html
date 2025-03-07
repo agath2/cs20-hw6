@@ -1,0 +1,49 @@
+<html>
+<head>
+        <style>
+                .product {
+                        border: 1px solid silver;
+                        margin: 0.5em;
+                        padding: 0.5em;
+                        background-color: whitesmoke;
+                        width: 80%;
+                        margin: auto;
+                        margin-bottom: 10px;
+                }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+        
+        <button id="displayProducts" style="margin-bottom: 20px">
+                Show Products Now!
+        </button>
+
+        <!-- div for displaying json -->
+        <div id="result">
+                <script>
+                        document.getElementById("displayProducts").addEventListener("click", () => {
+                                fetch("products.json")
+                                .then(response => response.json()) // Parse JSON response
+                                .then(data => {
+                                        console.log("Received Data:", data);
+                                        if (Array.isArray(data)) {
+                                                let resultHtml = data.map(product => `
+                                                <div class='product'>
+                                                        <p><h3>${product.Name}</h3></p>
+                                                        <p>${product.Description}</p>
+                                                        <p>Price: ${product.Price}</p>
+                                                        <p>Categories: ${product.Category}</p>
+                                                </div>
+                                                `).join("");
+                                                document.getElementById("result").innerHTML = resultHtml;
+                                        } else {
+                                                console.error("Data received is not an array:", data);
+                                        }
+                                })
+                                .catch(error => console.error("Error loading JSON:", error));
+                        });
+                </script>
+        </div>
+</body>
+</html>

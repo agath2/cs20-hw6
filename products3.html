@@ -1,0 +1,74 @@
+<html>
+<head>
+        <style>
+                .product {
+                        border: 1px solid silver;
+                        margin: 0.5em;
+                        padding: 0.5em;
+                        background-color: whitesmoke;
+                        width: 80%;
+                        margin: auto;
+                        margin-bottom: 10px;
+                }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+        <label for="categorySelect">Select Category:</label>
+        <select id="categorySelect">
+                <option value="">-- Select --</option>
+        </select>
+
+        <button id="filterButton">Filter</button>
+
+        <div id="result"></div>
+
+        <script>
+                $(document).ready(function () {
+                        let products = [];
+
+                        /* get JSON data */
+                        $.getJSON("products.json", function (data) {
+                                products = data; 
+
+                                /* extract unique categories using a set */
+                                let categories = new Set();
+                                data.forEach(product => {
+                                        let categoryList = product.Category.split(", ").map(c => c.trim());
+                                        categoryList.forEach(category => categories.add(category));
+                                });
+
+                                /* populate the dropdown by looping thru set */
+                                categories.forEach(category => {
+                                        $("#categorySelect").append(`<option value="${category}">${category}</option>`);
+                                });
+                        });
+
+                        /* Filter products if the button is clicked */
+                        $("#filterButton").click(function () {
+                                let selectedCategory = $("#categorySelect").val();
+                                $("#result").empty(); /* Clear previous results */
+
+                                if (selectedCategory) {
+                                        let filteredProducts = products.filter(product =>
+                                                product.Category.split(", ").map(c => c.trim()).includes(selectedCategory)
+                                        );
+                                        
+                                        /* display */
+                                        if (filteredProducts.length > 0) {
+                                                filteredProducts.forEach(product => {
+                                                        $("#result").append(`<p>${product.Name}</p>`);
+                                                });
+                                        } else {
+                                                /* no matching result */
+                                                $("#result").append("<p>No products found for this category.</p>");
+                                        }
+                                } else {
+                                        /* nothing selected */
+                                        $("#result").append("<p>Please select a category.</p>");
+                                }
+                        });
+                });
+        </script>
+</body>
+</html>

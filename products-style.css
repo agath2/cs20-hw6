@@ -1,0 +1,28 @@
+* {
+        display: block;
+        width: 80%;
+}
+
+product {
+        width: 80%;
+        border: 1px solid silver;
+        margin: 0.5em auto;
+        padding: 0.5em;
+        background-color: whitesmoke;
+}
+
+label {
+        display: inline;
+}
+
+category {
+        display: inline;
+}
+
+category::after {
+        content: ", ";
+}
+
+category:last-of-type::after {
+        content: "";
+}

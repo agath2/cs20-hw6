@@ -1,0 +1,51 @@
+[
+  {
+    "Name": "Vintage T-shirt",
+    "Description": "Tie-dye Grateful Dead T-shirt",
+    "Price": "$35",
+    "Category": "clothing, vintage"
+  },
+  {
+    "Name": "Classic Leather Jacket",
+    "Description": "Black biker-style leather jacket",
+    "Price": "$120",
+    "Category": "clothing, outerwear"
+  },
+  {
+    "Name": "Running Sneakers",
+    "Description": "Lightweight breathable running shoes",
+    "Price": "$75",
+    "Category": "footwear, sports"
+  },
+  {
+    "Name": "Denim Jeans",
+    "Description": "Slim-fit blue denim jeans",
+    "Price": "$75",
+    "Category": "footwear, sports"
+  },
+  {
+    "Name": "Wool Sweater",
+    "Description": "Cozy warm wool sweater for winter",
+    "Price": "$60",
+    "Category": "winter wear, clothing"
+  },
+  {
+    "Name": "Graphic Hoodie",
+    "Description": "Streetwear-inspired graphic hoodie",
+    "Price": "$55",
+    "Category": "urban, clothing"
+  },
+  {
+    "Name": "Vintage Vinyl Record",
+    "Description": "Limited edition Beatles vinyl from 1969",
+    "Price": "$80",
+    "Category": "music, vintage"
+  },
+  {
+    "Name": "1950s Polka Dot Dress",
+    "Description": "Retro 1950s swing dress with a polka dot pattern and flared skirt",
+    "Price": "$65",
+    "Category": "clothing, vintage"
+  }
+]
+      

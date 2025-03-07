@@ -1,0 +1,77 @@
+<html>
+<head>
+        <style>
+                .product {
+                        border: 1px solid silver;
+                        margin: 0.5em;
+                        padding: 0.5em;
+                        background-color: whitesmoke;
+                        width: 80%;
+                        margin: auto;    
+                }
+        </style>
+</head>
+<body>
+        <script>
+                let products = 
+                [product1 = {
+                        "Name": "Vintage T-shirt",
+                        "Description": "Tie-die Grateful Dead T-shirt",
+                        "Price": "$35",
+                        "Category": "clothing, vintage",
+                },
+                product2 = {
+                        "Name": "Classic Leather Jacket",
+                        "Description": "Black biker-style leather jacket",
+                        "Price": "$120",
+                        "Category": "clothing, outerwear",
+                },
+                product3 = {
+                        "Name": "Running Sneakers",
+                        "Description": "Lightweight breathable running shoes",
+                        "Price": "$75",
+                        "Category": "footwear, sports",
+                },
+                product4 = {
+                        "Name": "Denim Jeans",
+                        "Description": "Slim-fit blue denim jeans",
+                        "Price": "$75",
+                        "Category": "footwear, sports",
+                },
+                product5 = {
+                        "Name": "Wool Sweater",
+                        "Description": "Cozy warm wool sweater for winter",
+                        "Price": "$60",
+                        "Category": "winter wear, clothing",
+                },
+                product6 = {
+                        "Name": "Graphic Hoodie",
+                        "Description": "Streetwear-inspired graphic hoodie",
+                        "Price": "$55",
+                        "Category": "urban, clothing",
+                },
+                product7 = {
+                        "Name": "Vintage Vinyl Record",
+                        "Description": "Limited edition Beatles vinyl from 1969",
+                        "Price": "$80",
+                        "Category": "music, vintage",
+                },
+                product8 = {
+                        "Name": "1950s Polka Dot Dress",
+                        "Description": "Retro 1950s swing dress with a polka dot pattern and flared skirt",
+                        "Price": "$65",
+                        "Category": "clothing, vintage",
+                }]
+
+                /* loop thru products, write them on screen */
+                products.forEach(product => {
+                        document.write("<div class='product'>");
+                        document.write(`<p><span>Name:</span> ${product.Name} </p>`);
+                        document.write(`<p><span>Description:</span> ${product.Description}</p>`);
+                        document.write(`<p><span>Price:</span> ${product.Price}</p>`);
+                        document.write(`<p><span>Category:</span> ${product.Category}</p>`);
+                        document.write("</div>");
+                });
+        </script>
+</body>
+</html>

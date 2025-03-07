@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="products-style.css"?>
+<plist>
+<product>
+  <name> 
+    <label>Name: </label>
+    Vintage T-shirt
+  </name>
+  <description>
+    <label>Description: </label> 
+    Tie-die Grateful Dead T-shirt
+  </description>
+  <price>
+    <label>Price: </label> 
+    $35
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>clothing</category>
+    <category>vintage</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    Classic Leather Jacket
+  </name>
+  <description>
+    <label>Description: </label> 
+    Black biker-style leather jacket
+  </description>
+  <price>
+    <label>Price: </label> 
+    $120
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>clothing</category>
+    <category>outerwear</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    Running Sneakers
+  </name>
+  <description>
+    <label>Description: </label> 
+    Lightweight breathable running shoes
+  </description>
+  <price>
+    <label>Price: </label> 
+    $75
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>footwear</category>
+    <category>sports</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    Denim Jeans
+  </name>
+  <description>
+    <label>Description: </label> 
+    Slim-fit blue denim jeans
+  </description>
+  <price>
+    <label>Price: </label> 
+    $50
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>clothing</category>
+    <category>denim</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    Wool Sweater
+  </name>
+  <description>
+    <label>Description: </label> 
+    Cozy warm wool sweater for winter
+  </description>
+  <price>
+    <label>Price: </label> 
+    $60
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>clothing</category>
+    <category>winter wear</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    Graphic Hoodie
+  </name>
+  <description>
+    <label>Description: </label> 
+    Streetwear-inspired graphic hoodie
+  </description>
+  <price>
+    <label>Price: </label> 
+    $55
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>clothing</category>
+    <category>urban</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    Vintage Vinyl Record
+  </name>
+  <description>
+    <label>Description: </label> 
+    Limited edition Beatles vinyl from 1969
+  </description>
+  <price>
+    <label>Price: </label> 
+    $80
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>music</category>
+    <category>vintage</category>
+  </tags>
+</product>
+
+<product>
+  <name> 
+    <label>Name: </label>
+    1950s Polka Dot Dress
+  </name>
+  <description>
+    <label>Description: </label> 
+    Retro 1950s swing dress with a polka dot pattern and flared skirt
+  </description>
+  <price>
+    <label>Price: </label> 
+    $65
+  </price>
+  <tags> 
+    <label>Category: </label>
+    <category>clothing</category>
+    <category>vintage</category>
+  </tags>
+</product>
+</plist>
